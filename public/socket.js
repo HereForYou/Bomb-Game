@@ -1,7 +1,7 @@
 var roomList;
 var power;
 console.log("connecting...");
-const socket = io.connect("http://192.168.144.129:8000");
+const socket = io.connect("http://192.168.142.156:8000");
 let roomName = "";
 
 socket.on("connected", (data) => {

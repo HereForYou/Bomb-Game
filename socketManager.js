@@ -172,7 +172,6 @@ module.exports = {
 
       //--------------------- move ---------------------------------------
       socket.on('move', (data) => {
-        console.log('moving');
         const { socketId, roomName, direction } = data;
         roomItem = roomList.find((item) => item.roomName === roomName);
         if (roomItem) {
@@ -183,7 +182,6 @@ module.exports = {
             } else {
               removeUserFromRoom(userItem, roomItem);
             }
-            F;
           }
         } else {
           socket.emit('errorResponse', { error: 'Room is cleared.' });
