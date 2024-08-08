@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+}
+.title{
+  font-size: 64px;
+  font-family: Segoe Print;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  font-weight:bolder;
+}
+body {
+  background-image: url("./img/bg2.png");
+  /* opacity: 0.5; */
+  background-repeat:no-repeat;
+  background-size: 100% 130%;
+  margin:0;
+  padding:0 5%;
+  height:70vh;
+}
+.main{
+  padding: 3%,10%;
+  display: flex;
+  flex-direction: row;
+  height:inherit;
+}
+.roomList{
+  flex-grow:2 ;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+  border-right:5px;
+  border-style: solid;
+  padding:10px 150px 10px 150px;
+  height:inherit;
+  display: flex;
+  flex-direction: column;
+  }
+
+.game-over {
+  width: 400px;
+  height: 400px;
+}
+
+.game-over-text {
+  font-size: 64px;
+  color: red;
+  text-align: center;
+}
+
+.room{
+  border-radius: 20px;
+  border-color: black;
+  border-style: double;
+  background-image: url("./img/bg3.png");
+  background-size: cover;
+  /* background-color: rgba(255, 255, 255, 0.548); */
+  padding:10px 50px;
+  width: 900px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.roomNameLeft{
+  font-size: 30px;
+  font-family: Segoe UI black;
+}
+.user{
+  display: flex;
+  flex-direction: column;
+  padding: 0 32px;
+  font-size: 24px;
+  font-family: Comic Sans MS;
+}
+.userNameTitle{
+  display: flex;
+  flex-direction: column;
+  align-self:start;
+  padding-top: 10px;
+  font-family: Segoe UI black;
+  font-size: 24px;
+}
+.joinRoom{
+  width: 200px;
+  height: 48px;
+  font-size: 24px;
+  background-color: peru;
+  border-radius:30px;
+  padding-left: auto;
+  margin-left: 32px;
+}
+.createBar{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-grow:1 ;
+  padding: 1% 2%;
+}
+.userNameBar{
+  font-size: 36px;
+  font-family: Segoe Print;
+  color: blueviolet;
+  /* display: flex;
+  justify-content: center; */
+  padding: 5% ;
+
+}
+.userNameInput{
+  font-size: 24px;
+  padding:16px;
+  margin: 0 5%;
+  width:inherit;
+  border-radius:10px;
+  /* display: flex;
+  justify-content: center; */
+}
+.roomNameBar{
+  font-size: 36px;
+  color: yellow;
+  font-family: Segoe Print;
+  margin-top:30px;
+  border-top:5px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right:0px;
+  border-color: gray;
+  border-style: solid;
+  padding: 5% ;
+}
+.createRoom{
+  margin-top: 100px;
+  width: 350px;
+  height: 64px;
+  font-size: 36px;
+  background-color: skyblue;
+  border-radius:30px;
+  padding: auto;
+
+}

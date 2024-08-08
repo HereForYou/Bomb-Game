@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      canvas {
+        border: 1px solid #d3d3d3;
+        background-color: #3a3737;
+      }
+
+      body {
+        margin: 10px 25% 0 25%;
+      }
+    </style>
+    <script src="./jquery.min.js"></script>
+    <script src="./game.js"></script>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./input.js"></script>
+    <!-- <script src="./paintBlock.js"></script> -->
+    <!-- <script src="./map.js"></script> -->
+    <script src="./update.js"></script>
+    <!-- <script src="./bombExplode.js" defer></script> -->
+    <link rel="stylesheet" href="index.css" />
+    <script src="./socket.js" defer></script>
+    <script>
+      // var roomList = [
+      //   { roomName: "Room1", userName: ["User1", "User2", "User3", "User4"] },
+      //   { roomName: "Room2", userName: ["User1", "User2", "User3", "User4"] },
+      // ];
+    </script>
+  </head>
+
+  <body>
+    <img id="Road" src="./Road.png" style="display: none" />
+    <img id="Block" src="./SolidBlock.png" style="display: none" />
+    <img id="BombNumber" src="./bombNumberTag.png" style="display: none" />
+    <img id="Bomb" src="./bomba.png" style="display: none" />
+    <img id="BombPower" src="./bombPowerTag.png" style="display: none" />
+    <img id="Brick" src="./Brick.png" style="display: none" />
+    <img id="Smiley" src="./smiley.png" style="display: none" />
+    <img id="Angry" src="./angry.png" style="display: none" />
+    <img id="Explode" src="./explode.png" style="display: none" />
+    <img id="Boost" src="./boostTag.png" style="display: none" />
+
+    <div
+      id="canvas"
+      style="display: none; justify-content: center; margin-top: 10px"
+    ></div>
+    <div id="Info" style="display: none; justify-content: center">
+      <div
+        id="userInfo"
+        style="
+          width: 1250px;
+          height: 200px;
+          display: flex;
+          justify-content: space-around;
+          margin-top: 10px;
+        "
+      ></div>
+    </div>
+    <div id="landingPage">
+      <div id="test"></div>
+      <div class="title">BOMB Game</div>
+      <div class="main">
+        <div class="roomList"></div>
+        <div class="createBar">
+          <div class="userNameBar">Username</div>
+          <input
+            id="userName"
+            class="userNameInput"
+            type="text"
+            placeholder="Username"
+          />
+          <div class="roomNameBar">Roomname</div>
+          <input
+            id="roomName"
+            class="userNameInput"
+            type="text"
+            placeholder="Roomname"
+          />
+          <div style="display: flex; justify-content: center">
+            <button class="createRoom" onclick="onRoomCreate()">
+              Create Room
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="gameOver"
+      style="
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <h1 class="game-over-text">Game Over</h1>
+      <img src="./gameOver.png" class="game-over" alt="GameOver" />
+    </div>
+  </body>
+</html>
