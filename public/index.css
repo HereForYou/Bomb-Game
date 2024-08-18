@@ -105,36 +105,37 @@ body {
   color: blueviolet;
   /* display: flex;
   justify-content: center; */
-  padding: 5% ;
+  padding-left: 5% ;
 
 }
 .userNameInput{
+  outline: none;
   font-size: 24px;
   padding:16px;
   margin: 0 5%;
   width:inherit;
-  border-radius:10px;
+  border: 1px solid black;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   /* display: flex;
   justify-content: center; */
 }
 .roomNameBar{
   font-size: 36px;
-  color: yellow;
+  color: black;
   font-family: Segoe Print;
-  margin-top:30px;
-  border-top:5px;
-  border-bottom: 0px;
-  border-left: 0px;
-  border-right:0px;
-  border-color: gray;
-  border-style: solid;
-  padding: 5% ;
+  margin-top:10px;
+  font-weight: bolder;
+  padding-left: 5% ;
 }
 .createRoom{
-  margin-top: 100px;
-  width: 350px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 40px;
+  width: 100%;
   height: 64px;
   font-size: 36px;
+  font-weight: bolder;
   background-color: skyblue;
   border-radius:30px;
   padding: auto;
