@@ -47,8 +47,6 @@ function startGame() {
   ExplodeImg = document.getElementById("Explode");
   BoostImg = document.getElementById("Boost");
   myGameArea.start();
-  // paintBlock();
-  console.log(RoadImg);
 }
 var myGameArea = {
   canvas: document.createElement("canvas"),

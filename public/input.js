@@ -23,7 +23,6 @@ const handleEvent = (e) => {
     });
   }
   if (myGameArea.key == "ArrowDown") {
-    console.log('double click');
     socket.emit("move", {
       socketId: socket.id,
       roomName: roomName,
